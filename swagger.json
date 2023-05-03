@@ -1,0 +1,661 @@
+{
+  "swagger": "2.0",
+  "info": {
+    "title": "My API",
+    "description": "Description",
+    "version": "1.0.0"
+  },
+  "host": "localhost:17000",
+  "basePath": "/",
+  "schemes": [
+    "http"
+  ],
+  "paths": {
+    "/": {
+      "get": {
+        "summary": "Hello World!!",
+        "description": "",
+        "parameters": [],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/category": {
+      "post": {
+        "summary": "category",
+        "description": "",
+        "parameters": [
+          {
+            "name": "body",
+            "in": "body",
+            "description": "Some description...",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "categoryName": {
+                  "type": "string",
+                  "example": ""
+                }
+              }
+            }
+          }
+        ],
+        "responses": {
+          "400": {
+            "description": "Bad Request"
+          }
+        }
+      }
+    },
+    "/categories": {
+      "get": {
+        "summary": "AllCategories",
+        "description": "",
+        "parameters": [],
+        "responses": {
+          "400": {
+            "description": "Bad Request"
+          }
+        }
+      }
+    },
+    "/categoriesChildId": {
+      "post": {
+        "summary": "subCategoriesById",
+        "description": "",
+        "parameters": [
+          {
+            "name": "body",
+            "in": "body",
+            "description": "Some description...",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "_id": {
+                  "type": "string",
+                  "example": ""
+                }
+              }
+            }
+          }
+        ],
+        "responses": {
+          "400": {
+            "description": "Bad Request"
+          }
+        }
+      }
+    },
+    "/bikeSubCategory": {
+      "post": {
+        "summary": "sub category",
+        "description": "",
+        "parameters": [
+          {
+            "name": "body",
+            "in": "body",
+            "description": "Some description...",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "bikeCategories": {
+                  "type": "string",
+                  "example": ""
+                },
+                "locations": {
+                  "type": "string",
+                  "example": ""
+                },
+                "budget": {
+                  "type": "string",
+                  "example": ""
+                },
+                "brand": {
+                  "type": "string",
+                  "example": ""
+                },
+                "model": {
+                  "type": "string",
+                  "example": ""
+                },
+                "kmDriven": {
+                  "type": "string",
+                  "example": ""
+                },
+                "year": {
+                  "type": "string",
+                  "example": ""
+                }
+              }
+            }
+          }
+        ],
+        "responses": {
+          "400": {
+            "description": "Bad Request"
+          }
+        }
+      }
+    },
+    "/mobileSubCategory": {
+      "post": {
+        "summary": "sub category",
+        "description": "",
+        "parameters": [
+          {
+            "name": "body",
+            "in": "body",
+            "description": "Some description...",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "mobileCategory": {
+                  "type": "string",
+                  "example": ""
+                },
+                "locations": {
+                  "type": "string",
+                  "example": ""
+                },
+                "budget": {
+                  "type": "string",
+                  "example": ""
+                },
+                "brand": {
+                  "type": "string",
+                  "example": ""
+                }
+              }
+            }
+          }
+        ],
+        "responses": {
+          "400": {
+            "description": "Bad Request"
+          }
+        }
+      }
+    },
+    "/electronicSubCategory": {
+      "post": {
+        "summary": "sub category",
+        "description": "",
+        "parameters": [
+          {
+            "name": "body",
+            "in": "body",
+            "description": "Some description...",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "electronicAndAppliances": {
+                  "type": "string",
+                  "example": ""
+                },
+                "locations": {
+                  "type": "string",
+                  "example": ""
+                },
+                "budget": {
+                  "type": "string",
+                  "example": ""
+                },
+                "brand": {
+                  "type": "string",
+                  "example": ""
+                }
+              }
+            }
+          }
+        ],
+        "responses": {
+          "400": {
+            "description": "Bad Request"
+          }
+        }
+      }
+    },
+    "/commercialVehicleSubCategory": {
+      "post": {
+        "summary": "sub category",
+        "description": "",
+        "parameters": [
+          {
+            "name": "body",
+            "in": "body",
+            "description": "Some description...",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "categories": {
+                  "type": "string",
+                  "example": ""
+                },
+                "locations": {
+                  "type": "string",
+                  "example": ""
+                },
+                "budget": {
+                  "type": "string",
+                  "example": ""
+                },
+                "kmDriven": {
+                  "type": "string",
+                  "example": ""
+                },
+                "year": {
+                  "type": "string",
+                  "example": ""
+                }
+              }
+            }
+          }
+        ],
+        "responses": {
+          "400": {
+            "description": "Bad Request"
+          }
+        }
+      }
+    },
+    "/petSubCategory": {
+      "post": {
+        "summary": "sub category",
+        "description": "",
+        "parameters": [
+          {
+            "name": "body",
+            "in": "body",
+            "description": "Some description...",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "categories": {
+                  "type": "string",
+                  "example": ""
+                },
+                "locations": {
+                  "type": "string",
+                  "example": ""
+                },
+                "budget": {
+                  "type": "string",
+                  "example": ""
+                }
+              }
+            }
+          }
+        ],
+        "responses": {
+          "400": {
+            "description": "Bad Request"
+          }
+        }
+      }
+    },
+    "/propertiesSubCategory": {
+      "post": {
+        "summary": "sub category",
+        "description": "",
+        "parameters": [
+          {
+            "name": "body",
+            "in": "body",
+            "description": "Some description...",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "categories": {
+                  "type": "string",
+                  "example": ""
+                },
+                "locations": {
+                  "type": "string",
+                  "example": ""
+                },
+                "budget": {
+                  "type": "string",
+                  "example": ""
+                }
+              }
+            }
+          }
+        ],
+        "responses": {
+          "400": {
+            "description": "Bad Request"
+          }
+        }
+      }
+    },
+    "/serviceSubCategory": {
+      "post": {
+        "summary": "sub category",
+        "description": "",
+        "parameters": [
+          {
+            "name": "body",
+            "in": "body",
+            "description": "Some description...",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "services": {
+                  "type": "string",
+                  "example": ""
+                },
+                "locations": {
+                  "type": "string",
+                  "example": ""
+                }
+              }
+            }
+          }
+        ],
+        "responses": {
+          "400": {
+            "description": "Bad Request"
+          }
+        }
+      }
+    },
+    "/fashionSubCategory": {
+      "post": {
+        "summary": "sub category",
+        "description": "",
+        "parameters": [
+          {
+            "name": "body",
+            "in": "body",
+            "description": "Some description...",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "fashion": {
+                  "type": "string",
+                  "example": ""
+                },
+                "locations": {
+                  "type": "string",
+                  "example": ""
+                },
+                "budget": {
+                  "type": "string",
+                  "example": ""
+                }
+              }
+            }
+          }
+        ],
+        "responses": {
+          "400": {
+            "description": "Bad Request"
+          }
+        }
+      }
+    },
+    "/furnitureSubCategory": {
+      "post": {
+        "summary": "sub category",
+        "description": "",
+        "parameters": [
+          {
+            "name": "body",
+            "in": "body",
+            "description": "Some description...",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "categories": {
+                  "type": "string",
+                  "example": ""
+                },
+                "locations": {
+                  "type": "string",
+                  "example": ""
+                },
+                "budget": {
+                  "type": "string",
+                  "example": ""
+                }
+              }
+            }
+          }
+        ],
+        "responses": {
+          "400": {
+            "description": "Bad Request"
+          }
+        }
+      }
+    },
+    "/jobSubCategory": {
+      "post": {
+        "summary": "sub category",
+        "description": "",
+        "parameters": [
+          {
+            "name": "body",
+            "in": "body",
+            "description": "Some description...",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "categories": {
+                  "type": "string",
+                  "example": ""
+                },
+                "locations": {
+                  "type": "string",
+                  "example": ""
+                }
+              }
+            }
+          }
+        ],
+        "responses": {
+          "400": {
+            "description": "Bad Request"
+          }
+        }
+      }
+    },
+    "/carSubCategory": {
+      "post": {
+        "summary": "sub category",
+        "description": "",
+        "parameters": [
+          {
+            "name": "body",
+            "in": "body",
+            "description": "Some description...",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "locations": {
+                  "type": "string",
+                  "example": ""
+                },
+                "brandAndModel": {
+                  "type": "string",
+                  "example": ""
+                },
+                "popularBrand": {
+                  "type": "string",
+                  "example": ""
+                },
+                "allBrand": {
+                  "type": "string",
+                  "example": ""
+                },
+                "allModel": {
+                  "type": "string",
+                  "example": ""
+                },
+                "budget": {
+                  "type": "string",
+                  "example": ""
+                },
+                "year": {
+                  "type": "string",
+                  "example": ""
+                },
+                "noOfOwners": {
+                  "type": "string",
+                  "example": ""
+                },
+                "inspectionStatus": {
+                  "type": "string",
+                  "example": ""
+                },
+                "kmDriven": {
+                  "type": "string",
+                  "example": ""
+                },
+                "fuel": {
+                  "type": "string",
+                  "example": ""
+                },
+                "transmission": {
+                  "type": "string",
+                  "example": ""
+                }
+              }
+            }
+          }
+        ],
+        "responses": {
+          "400": {
+            "description": "Bad Request"
+          }
+        }
+      }
+    },
+    "/location": {
+      "post": {
+        "summary": "category",
+        "description": "",
+        "parameters": [
+          {
+            "name": "body",
+            "in": "body",
+            "description": "Some description...",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "state": {
+                  "type": "string",
+                  "example": ""
+                },
+                "distictId": {
+                  "type": "string",
+                  "example": ""
+                }
+              }
+            }
+          }
+        ],
+        "responses": {
+          "400": {
+            "description": "Bad Request"
+          }
+        }
+      }
+    },
+    "/cityLocation": {
+      "post": {
+        "summary": "category",
+        "description": "",
+        "parameters": [
+          {
+            "name": "body",
+            "in": "body",
+            "description": "Some description...",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "districtName": {
+                  "type": "string",
+                  "example": ""
+                },
+                "cityName": {
+                  "type": "array",
+                  "example": [
+                    "Andhra Pradesh",
+                    "Arunachal Pradesh",
+                    "Assam",
+                    "Bihar",
+                    "Chhattisgarh",
+                    "Goa",
+                    "Gujarat",
+                    "Haryana",
+                    "Himachal Pradesh",
+                    "Jharkhand",
+                    "Karnataka",
+                    "Kerala",
+                    "Madhya Pradesh",
+                    "Maharashtra",
+                    "Manipur",
+                    "Meghalaya",
+                    "Mizoram",
+                    "Nagaland",
+                    "Odisha",
+                    "Punjab",
+                    "Rajasthan",
+                    "Sikkim",
+                    "Tamil Nadu",
+                    "Telangana",
+                    "Tripura",
+                    "Uttar Pradesh",
+                    "Uttarakhand",
+                    "West Bengal",
+                    "Andaman and Nicobar Islands",
+                    "Chandigarh",
+                    "Dadra and Nagar Haveli and Daman and Diu",
+                    "Lakshadweep",
+                    "Delhi",
+                    "Puducherry",
+                    "Jammu and Kashmir",
+                    "Ladakh"
+                  ],
+                  "items": {
+                    "type": "string"
+                  }
+                }
+              }
+            }
+          }
+        ],
+        "responses": {
+          "400": {
+            "description": "Bad Request"
+          }
+        }
+      }
+    },
+    "/citysearch": {
+      "get": {
+        "summary": "city",
+        "description": "",
+        "parameters": [
+          {
+            "name": "city",
+            "in": "query",
+            "description": "Some description...",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "400": {
+            "description": "Bad Request"
+          }
+        }
+      }
+    }
+  }
+}
